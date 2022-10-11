@@ -1,6 +1,11 @@
+import AuthProvider from "./utils/auth/AuthProvider";
+
 const App = () => {
-    console.log(import.meta);
-    return <div>{import.meta.env.CRIME_STORY_API_URL}</div>;
+    return (
+        <AuthProvider>
+            <div>content</div>
+        </AuthProvider>
+    );
 };
 
 export default App;

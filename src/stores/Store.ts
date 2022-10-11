@@ -6,6 +6,6 @@ export const store: Store = {};
 
 export const StoreContext = createContext(store);
 
-const UseStore = () => {
-    useContext(StoreContext);
+export const useStore = () => {
+    return useContext(StoreContext);
 };
